@@ -7,6 +7,7 @@ Funções que **usam React** — encapsulam lógica reutilizável entre componen
 | Família | O que faz | Exemplos |
 | ------- | --------- | -------- |
 | **Server state** (React Query) | Busca/muta dados via `services/` | `useGetProducts`, `useCreateProduct` |
+| **Server state manual** (aula) | `useState` + `await` no service — sem React Query | `useMovies` |
 | **Context bridge** | Reexporta contexto com nome limpo | `useAuth`, `useTheme` |
 | **UI / utilitário** | Estado local ou efeito reutilizável | `useDebounce`, `useCounter`, `useProductFilters` |
 
@@ -48,6 +49,7 @@ Assim a UI não depende da implementação interna do Provider.
 | `useUpdateProduct` | mutation | editar + invalidar cache |
 | `useDeleteProduct` | mutation | excluir + invalidar cache |
 | `useGetSuppliers` | query | lista simples |
+| `useMovies` | **manual** (useState) | CRUD filmes sem React Query — `/exemplo-filmes` |
 | `useProductFilters` | UI | search, category, page → `ProductListParams` |
 | `useDebounce` | util | atrasa valor antes de ir para a queryKey |
 | `useCounter` | UI | exemplo de estado local (`/exemplo-estado-local`) |

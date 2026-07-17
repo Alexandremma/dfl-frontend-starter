@@ -12,10 +12,12 @@ Um **starter pack** (não um app de produto) com:
 
 Ideal para quem está aprendendo React profissional ou iniciando um projeto sem perder tempo com configuração.
 
+> **Novo no starter?** Leia o [guia para fellows](./COMO-USAR-ESTE-STARTER.md) — explica como explorar o repo e montar o seu projeto em cima dele.
+
 ## Começar
 
 ```bash
-git clone <url-do-repo> meu-projeto
+git clone https://github.com/Alexandremma/dfl-frontend-starter.git meu-projeto
 cd meu-projeto
 npm install
 ```
@@ -44,6 +46,7 @@ Abra [http://localhost:5173](http://localhost:5173) — a home é um **hub** com
 | `/exemplo-crud`          | CRUD com filtros, paginação, **dialog ao editar**            |
 | `/exemplo-detalhe/:id`   | Detalhe com `useGetProduct` (link **Ver detalhe** no card)   |
 | `/exemplo-lista-simples` | Lista de fornecedores sem paginação                          |
+| `/exemplo-filmes`        | CRUD com `useState` + service (**sem React Query** — aula)   |
 | `/exemplo-estado-local`  | `useState` vs server state (React Query)                     |
 | `/area-restrita`         | `ProtectedRoute` + Context de autenticação                   |
 
@@ -105,11 +108,12 @@ Copie `.env.example` para `.env`. Hoje os services usam dados dummy; `VITE_API_U
 
 ## Como usar neste projeto
 
-1. Explore os exemplos nas rotas do hub
-2. Leia os `README.md` em cada pasta de `src/`:
+1. Leia o [guia para fellows](./COMO-USAR-ESTE-STARTER.md)
+2. Explore os exemplos nas rotas do hub
+3. Leia os `README.md` em cada pasta de `src/`:
    - `components/`, `constants/`, `contexts/`, `enums/`, `hooks/`, `lib/`, `mappers/`, `pages/`, `services/`, `test-utils/`, `types/`
-3. **Copie a pasta** de um módulo (ex.: `products/`) e adapte para seu domínio (Todo, galeria, livros…)
-4. Os exemplos podem permanecer como referência ou ser removidos quando não precisar mais
+4. **Copie a pasta** de um módulo (ex.: `products/`) e adapte para seu domínio (Todo, galeria, livros…)
+5. Os exemplos podem permanecer como referência ou ser removidos quando não precisar mais
 
 ## Convenções
 

@@ -25,6 +25,7 @@ components/products/ProductList.tsx
 | `/exemplo-crud` | `ProductsPage.tsx` | CRUD + filtros + paginação + dialog |
 | `/exemplo-detalhe/:id` | `ProductDetailPage.tsx` | `useGetProduct` — busca por id |
 | `/exemplo-lista-simples` | `SuppliersPage.tsx` | Lista read-only |
+| `/exemplo-filmes` | `MoviesPage.tsx` | CRUD com `useMovies` (useState, sem React Query) |
 | `/exemplo-estado-local` | `LocalStateExamplePage.tsx` | `useState` vs server state |
 | `/area-restrita` | `RestrictedAreaPage.tsx` | Rota protegida |
 | `*` | `NotFound.tsx` | 404 |

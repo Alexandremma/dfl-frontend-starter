@@ -28,6 +28,12 @@ export default function HomePage() {
           description="Leitura sem paginação — ideal para Todo, galeria e listas pequenas."
         />
         <HubCard
+          title="Filmes (CRUD sem React Query)"
+          badge="Aula"
+          to="/filmes"
+          description="types → dummy → service → useMovies (useState) → MovieCard. Compare com produtos/fornecedores."
+        />
+        <HubCard
           title="Estado local (useState)"
           to="/exemplo-estado-local"
           description="Contraste entre UI state e server state do React Query."
