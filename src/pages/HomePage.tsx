@@ -16,6 +16,18 @@ export default function HomePage() {
 
       <section className="grid gap-4 sm:grid-cols-2">
         <HubCard
+          title="Filmes — passo 1 (tudo na página)"
+          badge="Comece aqui"
+          to="/exemplo-filmes"
+          description="useState + useEffect + dummy na página. Loading, lista vazia e lista com dados."
+        />
+        <HubCard
+          title="Filmes — passo 2 (service + hook)"
+          badge="Aula"
+          to="/filmes"
+          description="types → dummy → service → useMovies (useState) → MovieCard. Sem React Query."
+        />
+        <HubCard
           title="CRUD de Produtos"
           badge="Paginação"
           to="/exemplo-crud"
@@ -26,12 +38,6 @@ export default function HomePage() {
           badge="Lista simples"
           to="/exemplo-lista-simples"
           description="Leitura sem paginação — ideal para Todo, galeria e listas pequenas."
-        />
-        <HubCard
-          title="Filmes (CRUD sem React Query)"
-          badge="Aula"
-          to="/filmes"
-          description="types → dummy → service → useMovies (useState) → MovieCard. Compare com produtos/fornecedores."
         />
         <HubCard
           title="Estado local (useState)"
