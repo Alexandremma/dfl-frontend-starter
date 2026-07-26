@@ -12,6 +12,7 @@ import ProductsPage from "@/pages/ProductsPage";
 import RestrictedAreaPage from "@/pages/RestrictedAreaPage";
 import SuppliersPage from "@/pages/SuppliersPage";
 import TaskExamplePage from "@/pages/TaskExamplePage";
+import TaskPage from "@/pages/TaskPage";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -31,6 +32,7 @@ export default function App() {
             <ErrorBoundary>
               <Routes>
                 <Route element={<AppLayout />}>
+                <Route path="/tarefas" element={<TaskPage />} />
                 <Route path="/exemplo-tarefas" element={<TaskExamplePage />} />
                   <Route path="/" element={<HomePage />} />
                   <Route path="/exemplo-crud" element={<ProductsPage />} />

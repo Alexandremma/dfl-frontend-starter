@@ -44,6 +44,12 @@ export default function HomePage() {
   to="/exemplo-tarefas"
   description="useState + useEffect + dummy na página. Loading, lista vazia e lista com dados."
 />
+        <HubCard
+  title="Tarefas — passo 2 (service + hook)"
+  badge="Aula"
+  to="/tarefas"
+  description="types → dummy → service → useTasks (useState) → TaskCard. Sem React Query."
+/>
       </section>
 
       <RestrictedLoginPanel />
