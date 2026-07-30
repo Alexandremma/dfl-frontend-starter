@@ -10,7 +10,7 @@ export default function HomePage() {
         </h1>
         <p className="mx-auto mt-3 max-w-2xl text-gray-600 dark:text-gray-400">
           Template React configurado com exemplos funcionais de padrões de mercado. Explore cada
-          rota para entender como organizar código em projetos reais.
+          rota para entender como organizar código em projetos reais. Fazer uma alteração de exemplo.
         </p>
       </section>
 
