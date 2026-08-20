@@ -7,4 +7,6 @@ export interface Landing {
   title: string;
   description: string;
   icon: LucideIcon;
+  featured: boolean;
+  details: string;
 }
