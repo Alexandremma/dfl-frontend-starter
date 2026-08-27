@@ -9,8 +9,7 @@ export default function HomePage() {
           DFL Frontend Starter
         </h1>
         <p className="mx-auto mt-3 max-w-2xl text-gray-600 dark:text-gray-400">
-          Template React configurado com exemplos funcionais de padrões de mercado. Explore cada
-          rota para entender como organizar código em projetos reais.
+         
         </p>
       </section>
 
@@ -38,6 +37,18 @@ export default function HomePage() {
           to="/area-restrita"
           description="Padrão Context + useAuth + ProtectedRoute preparado para autenticação real."
         />
+        <HubCard
+  title="Tarefas — passo 1 "
+  badge="Comece aqui"
+  to="/exemplo-tarefas"
+  description="useState + useEffect + dummy na página. Loading, lista vazia e lista com dados."
+/>
+        <HubCard
+  title="Tarefas — passo 2 (service + hook)"
+  badge="Tarefa"
+  to="/tarefas"
+  description="types → dummy → service → useTasks (useState) → TaskCard. Sem React Query."
+/>
       </section>
 
       <RestrictedLoginPanel />

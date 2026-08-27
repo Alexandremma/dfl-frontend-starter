@@ -1,0 +1,26 @@
+import { Task } from "@/types/task.types";
+import TaskCard from "./TaskCard";
+
+interface TaskListProps {
+  tasks: Task[];
+  onConcluir: (task: Task) => void;
+  onExcluir: (id: string) => void;
+}
+
+export default function TaskList({ tasks, onConcluir, onExcluir }: TaskListProps) {
+  return (
+    <div className="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-900">
+      <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">Lista de Tarefas</h2>
+      <div className="grid gap-4 sm:grid-cols-2">
+        {tasks.map((task) => (
+          <TaskCard
+            key={task.id}
+            task={task}
+            onConcluir={() => onConcluir(task)}
+            onExcluir={() => onExcluir(task.id)}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
