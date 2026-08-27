@@ -9,8 +9,7 @@ export default function HomePage() {
           DFL Frontend Starter
         </h1>
         <p className="mx-auto mt-3 max-w-2xl text-gray-600 dark:text-gray-400">
-          Template React configurado com exemplos funcionais de padrões de mercado. Explore cada
-          rota para entender como organizar código em projetos reais.
+         
         </p>
       </section>
 
@@ -46,7 +45,7 @@ export default function HomePage() {
 />
         <HubCard
   title="Tarefas — passo 2 (service + hook)"
-  badge="Aula"
+  badge="Tarefa"
   to="/tarefas"
   description="types → dummy → service → useTasks (useState) → TaskCard. Sem React Query."
 />

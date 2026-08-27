@@ -11,7 +11,7 @@ export default function TaskPage() {
     <main className="space-y-4">
       <div className="flex items-center justify-between gap-2">
         <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-          Tarefas (CRUD)
+         
         </h1>
         <Link to="/">
           <Button variant="neutral" className="gap-2">
