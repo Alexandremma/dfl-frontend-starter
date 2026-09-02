@@ -11,7 +11,7 @@ export default function TaskPage() {
     <main className="space-y-4">
       <div className="flex items-center justify-between gap-2">
         <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-         
+          Minhas Tarefas
         </h1>
         <Link to="/">
           <Button variant="neutral" className="gap-2">
@@ -26,16 +26,8 @@ export default function TaskPage() {
           <Loader2 className="h-4 w-4 animate-spin" />
           <p className="text-gray-500">Carregando...</p>
         </div>
-      ) : tasks.length === 0 ? (
-        <div className="flex h-full items-center justify-center">
-          <p className="text-gray-500">Nenhuma tarefa encontrada</p>
-        </div>
       ) : (
-        <TaskList
-          tasks={tasks}
-          onConcluir={cycleStatus}
-          onExcluir={removeTask}
-        />
+        <TaskList tasks={tasks} onConcluir={cycleStatus} onExcluir={removeTask} />
       )}
     </main>
   );
