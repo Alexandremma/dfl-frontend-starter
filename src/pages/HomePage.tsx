@@ -34,6 +34,12 @@ export default function HomePage() {
           description="CRUD completo com filtros, paginação, dialog ao editar, rota de detalhe e React Query."
         />
         <HubCard
+          title="Notas — React Query"
+          badge="Aula"
+          to="/exemplo-notas"
+          description="CRUD simples com useQuery + useMutation. Compare com /filmes (hook manual)."
+        />
+        <HubCard
           title="Lista de Fornecedores"
           badge="Lista simples"
           to="/exemplo-lista-simples"

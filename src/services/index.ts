@@ -14,3 +14,4 @@ export {
   updateMovie,
   deleteMovie,
 } from "./movies.service";
+export { getNotes, createNote, updateNote, deleteNote } from "./notes.service";

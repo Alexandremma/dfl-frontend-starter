@@ -9,4 +9,5 @@ export type { ApiProduct } from "./api-product.types";
 export type { PaginatedResponse } from "./pagination.types";
 export type { Supplier } from "./supplier.types";
 export type { Movie, CreateMovieDto, UpdateMovieDto } from "./movie.types";
+export type { Note, CreateNoteDto, UpdateNoteDto } from "./note.types";
 export type { User, AuthState } from "./auth.types";

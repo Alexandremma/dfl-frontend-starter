@@ -46,6 +46,7 @@ Abra [http://localhost:5173](http://localhost:5173) — a home é um **hub** com
 | `/exemplo-lista-simples` | Lista de fornecedores sem paginação                           |
 | `/exemplo-filmes`        | Passo 1: filmes com `useState` + `useEffect` na página        |
 | `/filmes`                | Passo 2: CRUD com service + `useMovies` (**sem React Query**) |
+| `/exemplo-notas`         | Passo 3: o mesmo CRUD com `useQuery` + `useMutation`           |
 | `/exemplo-estado-local`  | `useState` vs server state (React Query)                      |
 | `/area-restrita`         | `ProtectedRoute` + Context de autenticação                    |
 

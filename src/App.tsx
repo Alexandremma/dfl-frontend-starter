@@ -8,6 +8,7 @@ import HomePage from "@/pages/HomePage";
 import LocalStateExamplePage from "@/pages/LocalStateExamplePage";
 import MoviesExamplePage from "@/pages/MoviesExamplePage";
 import MoviesPage from "@/pages/MoviesPage";
+import NotesPage from "@/pages/NotesPage";
 import NotFound from "@/pages/NotFound";
 import ProductDetailPage from "@/pages/ProductDetailPage";
 import ProductsPage from "@/pages/ProductsPage";
@@ -38,6 +39,7 @@ export default function App() {
                   <Route path="/exemplo-lista-simples" element={<SuppliersPage />} />
                   <Route path="/exemplo-filmes" element={<MoviesExamplePage />} />
                   <Route path="/filmes" element={<MoviesPage />} />
+                  <Route path="/exemplo-notas" element={<NotesPage />} />
                   <Route path="/exemplo-estado-local" element={<LocalStateExamplePage />} />
                   <Route element={<ProtectedRoute />}>
                     <Route path="/area-restrita" element={<RestrictedAreaPage />} />
