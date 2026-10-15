@@ -31,13 +31,10 @@ export default function LandingPage() {
   return (
     <main className="space-y-8 rounded-3xl bg-gradient-to-b from-green-50 via-lime-300 to-[#39FF14] p-6">
       <section className="rounded-2xl bg-gradient-to-r from-emerald-600 to-green-700 px-6 py-16 text-center text-white">
-
-        
-      <h1 className="text-4xl font-extrabold sm:text-5xl">Recicla+</h1>
-      <p className="mx-auto mt-4 max-w-xl text-emerald-100">
-  Recicle certo, sem complicação: agenda e guia num só lugar.
-</p>
-
+        <h1 className="text-4xl font-extrabold sm:text-5xl">Recicla+</h1>
+        <p className="mx-auto mt-4 max-w-xl text-emerald-100">
+          Recicle certo, sem complicação: agenda e guia num só lugar.
+        </p>
 
         <Link to="/" className="mt-6 inline-block">
           <Button variant="neutral" className="gap-2">
@@ -51,10 +48,6 @@ export default function LandingPage() {
         <div className="flex h-full items-center justify-center gap-1">
           <Loader2 className="h-4 w-4 animate-spin" />
           <p className="text-gray-500">Carregando...</p>
-        </div>
-      ) : items.length === 0 ? (
-        <div className="flex h-full items-center justify-center">
-          <p className="text-gray-500">Nenhum destaque encontrado</p>
         </div>
       ) : (
         <LandingList items={items} />

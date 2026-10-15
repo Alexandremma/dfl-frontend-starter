@@ -6,6 +6,14 @@ interface LandingListProps {
 }
 
 export default function LandingList({ items }: LandingListProps) {
+  if (items.length === 0) {
+    return (
+      <div className="flex h-full items-center justify-center">
+        <p className="text-gray-500">Nenhum destaque encontrado</p>
+      </div>
+    );
+  }
+
   return (
     <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
       {items.map((item) => (
